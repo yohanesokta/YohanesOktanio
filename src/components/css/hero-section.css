@@ -1,0 +1,153 @@
+:root {
+    --hero-height: 500px;
+    --image-gap: 10%;
+}
+.hero {
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Open Sans";
+    height: var(--hero-height);
+    position: relative;
+    display: flex;
+    .container {
+        margin: auto 15%;
+        height: 90%;
+        display: flex;
+        .image {
+            width: auto;
+            height: 100%;
+            display: flex;
+            img {
+                margin: 0 auto;
+                height: 100%;
+            }
+        }
+        .hero-gap {
+            width: 150px;
+            height: 100px;
+        }
+        .tagline {
+            height: 100%;
+            display: flex;
+            font-weight: 700;
+            .container-field {
+                margin: auto;
+            }
+            .field {
+                margin: auto 0;
+                height: auto;
+                h1 {
+                    font-size: 32pt;
+                    color: #4161bd;
+                }
+                .text {
+                    margin: 20px 0;
+                    font-size: 10pt;
+                    color: black;
+                    span:first-child {
+                        color: #4161bd;
+                    }
+                }
+                button {
+                    overflow: hidden;
+                    display: flex;
+                    background-color: #6b84cb;
+                    height: 40px;
+                    transition: 0.2s ease;
+                    width: 150px;
+                    border-radius: 100px;
+                    font-weight: 600;
+                    color: white;
+                    padding-left: 10px;
+                    border: none;
+                    span {
+                        width: 110px;
+                        text-align: center;
+                        margin: auto 0;
+                    }
+                    .logo {
+                        border-radius: 100px;
+                        transition: 0.2s ease;
+                        width: 40px;
+                        background-color: #acbbe6;
+                        height: 100%;
+                        display: flex;
+                        img {
+                            margin: auto;
+                            width: 70%;
+                            height: 70%;
+                        }
+                    }
+                }
+                button:hover {
+                    background-color: #354d8f;
+                    .logo {
+                        background-color: #5d78c3;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1288px) {
+    .hero {
+        .container {
+            margin: auto 10%;
+        }
+    }
+}
+@media only screen and (max-width: 1170px) {
+    .hero {
+        .container {
+            margin: auto;
+        }
+    }
+}
+@media only screen and (max-width: 912px) {
+    .hero {
+        margin-top: 50px;
+        .container {
+            width: 90%;
+            display: block;
+            .hero-gap {
+                height: 0;
+            }
+            .field {
+                margin-left: 200px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 430px) {
+    .hero {
+        .container {
+            .container-field {
+                .field {
+                    h1 {
+                        font-size: 18pt;
+                        text-align: center;
+                    }
+                    span {
+                        font-size: 8pt;
+                    }
+                    button {
+                        margin-left: calc(50% - 78px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .hero {
+        .container {
+            .image {
+                height: auto;
+                img {
+                    width: 90%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

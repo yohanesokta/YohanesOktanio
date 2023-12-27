@@ -4,6 +4,7 @@ import LogoButton from "../assets/align-right.svg"
 import { useState } from "react"
 export default function Navbar() {
     const [NavBtn, SetNavBtn] = useState(false)
+
     function BtnNav() {
         const nav = document.querySelector('nav')
         if (NavBtn) {
@@ -14,6 +15,7 @@ export default function Navbar() {
             SetNavBtn(true)
         }
     }
+
     return (<>
         <nav>
             <div className="name">
@@ -38,5 +40,6 @@ export default function Navbar() {
                 <img src={LogoGithub} alt="logo github" />
             </div>
         </nav>
+        <div className="nav-gap"></div>
     </>)
 }
