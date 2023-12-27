@@ -90,8 +90,12 @@
     }
 }
 @media only screen and (max-width: 1288px) {
-    .hero {
+    .hero { 
+        padding-bottom: 20px;
         .container {
+            .image{
+                height: var(--hero-height);
+            }
             margin: auto 10%;
         }
     }
@@ -105,12 +109,13 @@
 }
 @media only screen and (max-width: 912px) {
     .hero {
+        height: auto;
         margin-top: 50px;
         .container {
             width: 90%;
             display: block;
             .hero-gap {
-                height: 0;
+                height: 50px;
             }
             .field {
                 margin-left: 200px;
@@ -118,9 +123,10 @@
         }
     }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 420px) {
     .hero {
         .container {
+            height: auto;
             .container-field {
                 .field {
                     h1 {

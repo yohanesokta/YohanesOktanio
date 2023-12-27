@@ -1,6 +1,6 @@
 import "./css/hero-section.css"
 import ImageGithub from "../assets/faGithub.svg"
-import Image from "../assets/FotoProfile.png"
+import Image from "../assets/new_profile.png"
 import { useEffect } from "react"
 
 export default function HeroSection() {
@@ -16,7 +16,6 @@ export default function HeroSection() {
                 setTimeout(typeWriter, 50)
             }
         }
-
         typeWriter()
     })
     return (<>
