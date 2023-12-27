@@ -1,0 +1,104 @@
+:root {
+    --gap-panel-navbar: 5%;
+    --nav-height: 60px;
+}
+nav {
+    transition: 0.3s ease;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: var(--nav-height);
+    .name {
+        transition: 0.2s ease;
+        display: flex;
+        position: absolute;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: calc((60px - 27px) / 2);
+        left: var(--gap-panel-navbar);
+        span {
+            margin: auto 2.5px;
+        }
+        span:last-child {
+            color: white;
+            background-color: #4161bd;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
+    .nav-link {
+        width: auto;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        ul {
+            margin: auto 20px;
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: black;
+                font-family: "Open Sans";
+                text-decoration: none;
+            }
+        }
+    }
+    .btn-mobile-navbar {
+        width: auto;
+        height: var(--nav-height);
+        display: none;
+        position: absolute;
+        right: var(--gap-panel-navbar);
+        img {
+            width: 100%;
+            margin: auto 0;
+        }
+    }
+    .github-logo {
+        width: auto;
+        height: var(--nav-height);
+        position: absolute;
+        right: var(--gap-panel-navbar);
+        display: flex;
+        img {
+            width: 30px;
+            height: 30px;
+            margin: auto 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        overflow: hidden;
+        height: var(--nav-height);
+        .nav-link {
+            margin-top: calc(var(--nav-height) + 10px);
+            display: block;
+            ul {
+                display: flex;
+                margin-top: 10px;
+                a {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+        .github-logo {
+            margin-top: calc(var(--nav-height) + 120px);
+            display: flex;
+            right: calc(50% - 15px);
+        }
+        .btn-mobile-navbar {
+            display: flex;
+        }
+    }
+}
+
+.nav-active {
+    height: 250px;
+    box-shadow: 0 2px 10px rgb(227, 227, 227);
+    .name {
+        left: calc(50% - 77.5px);
+    }
+}
