@@ -1,0 +1,112 @@
+:root{
+    --about-height:250px;
+}
+.about-line{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.about-line::after{
+    content: "";
+    width: 20%;
+    height: 2.5px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgb(182, 182, 182);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.about{
+    margin: 100px 0;
+    width: 100%;
+    height: var(--about-height);
+    display: flex;
+    .container{
+        position: relative;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        img{
+            height: var(--about-height);
+        }
+        .field-container{
+            display: flex;
+            width: auto;
+            height: var(--about-height);
+            .desc{
+                margin: auto 20px;
+                h1{
+                    color: #354d8f;
+                }
+                p{
+                    font-weight: 600;
+                    font-size: 10pt;
+                    span{
+                        font-weight: 700;
+                        color: #213876;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1200px){
+    .about{
+        .container{
+            width: 70%;
+        }
+    }
+}
+@media only screen and ( max-width:850px){
+    .about{
+        margin: 50px 0;
+            height: auto;
+        .container{
+            display: block;
+            img{
+                width: 80%;
+                height: auto;
+                margin-left: 10%;
+            }
+            .field-container{
+                text-align: center;
+                .desc{
+                    p{
+                        margin-top: 20px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    .about-line::after{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:338px){
+    .about .field-container h1{
+        font-size: 14pt;
+    }
+    .about .field-container .desc p{
+        font-size: 12pt;
+    }
+}
+@media only screen and (max-width:300px){
+    .about{
+        .container{
+            width: 100%;
+        }
+    }
+}
+.about .container::after{
+    content: "";
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
