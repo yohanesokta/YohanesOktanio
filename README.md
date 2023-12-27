@@ -10,4 +10,15 @@ Continue From [ Jan 13, 2023 ] , Portofolio . made with [@vite](https://github.c
 -   Install Package
 -   running project `yarn run dev`
 
+## Todo
+
+-   ☑️ Navigation
+-   ☑️ Hero Section
+-   ☑️ About Section
+-   ◼️ Make Latest Project
+-   ◼️ Colaborate
+-   ◼️ Contact & Footer
+-   ◼️ Animation
+-   ◼️ Scroll Slider [On Right]
+
 Deploy at [netlify](https://yohanesoktanio.netlify.app/) or clik on description link,
