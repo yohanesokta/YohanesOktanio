@@ -15,7 +15,7 @@ Continue From [ Jan 13, 2023 ] , Portofolio . made with [@vite](https://github.c
 -   ☑️ Navigation
 -   ☑️ Hero Section
 -   ☑️ About Section
--   ◼️ Make Latest Project
+-   ☑️ Make Latest Project
 -   ◼️ Colaborate
 -   ◼️ Contact & Footer
 -   ◼️ Animation
