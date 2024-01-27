@@ -36,7 +36,9 @@ export default function Navbar() {
             <div className="btn-mobile-navbar" onClick={() => { BtnNav() }}>
                 <img src={LogoButton} alt="btn-mobile-navbar" />
             </div>
-            <div className="github-logo">
+            <div className="github-logo" onClick={() => {
+                window.location.href = "https://github.com/yohanesokta"
+            }}>
                 <img src={LogoGithub} alt="logo github" />
             </div>
         </nav>

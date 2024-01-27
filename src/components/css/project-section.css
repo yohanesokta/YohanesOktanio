@@ -30,7 +30,7 @@
             object-fit: cover;
         }
         .fov {
-            background-color: rgb(0, 0, 0, 0.5);
+            background-color: rgba(3, 4, 41, 0.5);
             top: 0;
             position: absolute;
             left: 0;
@@ -81,5 +81,21 @@
 @media only screen and (max-width: 840px) {
     .project-section {
         flex-basis: 420px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .project-section {
+        display: block;
+        margin: 0;
+        width: 100%;
+        .card {
+            margin: 20px 2.5%;
+            width: 95%;
+        }
+    }
+}
+@media only screen and (max-width: 280px) {
+    .lang {
+        display: none;
     }
 }

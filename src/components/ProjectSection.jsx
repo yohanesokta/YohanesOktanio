@@ -2,18 +2,22 @@ import "./css/project-section.css"
 import Images from "../assets/hanzsoft-websites-preview.jpg"
 import Images2 from "../assets/mirror-sc.jpg"
 import ImageHansoftApi from "../assets/hanzsoft-api-preview.jpg.png"
+import ImageEJC from "../assets/EJC_project-preview.png"
+import ImageMathApp from "../assets/mathapp-preview.png"
 
-const CardProject = ({ image, name, lang }) => {
+const CardProject = ({ image, name, lang, link }) => {
     return (
-        <div className="card">
-            <img src={image} alt="" />
-            <div className="fov">
-                <h1>{name}</h1>
-                <div className="lang">
-                    {lang}
+        <a href={link ?? "#"} target="_blank">
+            <div className="card">
+                <img src={image} alt="" />
+                <div className="fov">
+                    <h1>{name}</h1>
+                    <div className="lang">
+                        {lang}
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
@@ -32,10 +36,10 @@ const ProjectSection = () => {
                     <CardProject image={Images} name={"Hanzsoft - Websites"} lang={
                         <>
                             <LangTag text="laravel" />
-                            <LangTag text="html" />
+                            <LangTag text="php" />
                             <LangTag text="mongo db" />
                         </>
-                    } />
+                    } link="https://github.com/yohanesokta/hanzsoft-websites" />
                     <CardProject image={Images2} name={"Mirror - SC"}
                         lang={
                             <>
@@ -44,6 +48,7 @@ const ProjectSection = () => {
                                 <LangTag text="scrcpy" />
                             </>
                         }
+                        link="https://github.com/yohanesokta/Mirror-SC"
                     />
                     <CardProject image={ImageHansoftApi} name={"Hanzsoft - API"} lang={
                         <>
@@ -51,7 +56,23 @@ const ProjectSection = () => {
                             <LangTag text="Node JS" />
                             <LangTag text="mongo db" />
                         </>
-                    } />
+                    } link="https://github.com/yohanesokta/hanzsoft-data-api" />
+                    <CardProject image={ImageEJC} name={"EAST JAVA CULTURE"} lang={
+                        <>
+                            <LangTag text="React Vite" />
+                            <LangTag text="Javascript" />
+                            <LangTag text="GCP Login" />
+                        </>
+                    } link="https://east-java-culture.vercel.app/"
+                    />
+                    <CardProject image={ImageMathApp} name={"PintarMath APP"} lang={
+                        <>
+                            <LangTag text="PHP" />
+                            <LangTag text="Laravel" />
+                            <LangTag text="Mongo DB" />
+                        </>
+                    } link="https://github.com/yohanesokta/math_app-main"
+                    />
                 </div>
             </div>
         </>
