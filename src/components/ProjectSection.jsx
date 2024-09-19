@@ -4,7 +4,8 @@ import Images2 from "../assets/mirror-sc.jpg"
 import ImageHansoftApi from "../assets/hanzsoft-api-preview.jpg.png"
 import ImageEJC from "../assets/EJC_project-preview.png"
 import ImageMathApp from "../assets/mathapp-preview.png"
-
+import ImagePendataan from "../assets/pendataan.png"
+import IGE from "../assets/ig.jpg"
 const CardProject = ({ image, name, lang, link }) => {
     return (
         <a href={link ?? "#"} target="_blank">
@@ -72,6 +73,23 @@ const ProjectSection = () => {
                             <LangTag text="Mongo DB" />
                         </>
                     } link="https://github.com/yohanesokta/math_app-main"
+                    />
+                    <CardProject image={ImagePendataan} name={"FORM MABA UTM"} lang={
+                        <>
+                            <LangTag text="PHP" />
+                            <LangTag text="Laravel" />
+                            <LangTag text="Cloudinary" />
+                        </>
+                    } link="https://github.com/yohanesokta/pendataan-maba-dev"
+                    />
+
+                    <CardProject image={IGE} name={"Reels Dowloader"} lang={
+                        <>
+                            <LangTag text="Html/Js" />
+                            <LangTag text="APIhut" />
+                            <LangTag text="IMPHNEN" />
+                        </>
+                    } link="https://github.com/yohanesokta/IG-downloader"
                     />
                 </div>
             </div>
